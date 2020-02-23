@@ -1,11 +1,8 @@
-const withSass = require('@zeit/next-sass')
-const withTM = require('next-transpile-modules')
+// next.config.js
+// const withSass = require('@zeit/next-sass')
 
-module.exports = withSass(
-  withTM({
-    transpileModules: ['react-bulma-components'],
-    sassLoaderOptions: {
-      includePaths: ['./styles']
-    }
-  })
-)
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true'
+})
+
+module.exports = withBundleAnalyzer({})

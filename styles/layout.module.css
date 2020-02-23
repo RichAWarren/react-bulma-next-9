@@ -1,0 +1,19 @@
+.headerContainer {
+    background: #1D976C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D976C, #93F9B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D976C, #93F9B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 300px;
+    width: 100vw;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    background-color: #19805c;
+    border-radius: 4px;
+}

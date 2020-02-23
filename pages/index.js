@@ -1,4 +1,38 @@
 import React from 'react'
-import Button from 'react-bulma-components/src/components/button' //import from src, not lib
+// import '../styles.scss'
+// import '../node_modules/bulma/bulma.sass'
+import { Button } from 'react-bulma-components'
 
-export default () => <Button color="primary">My Bulma button</Button>
+const App = () => (
+  <div>
+    <Button color="primary">My Bulma button</Button>
+    <h1 className="title">Bulma</h1>
+    <p className="subtitle">
+      Modern CSS framework based on{' '}
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
+    </p>
+
+    <div className="field">
+      <div className="control">
+        <input className="input" type="text" placeholder="Input" />
+      </div>
+    </div>
+
+    <div className="field">
+      <p className="control">
+        <span className="select">
+          <select>
+            <option>Select dropdown</option>
+          </select>
+        </span>
+      </p>
+    </div>
+
+    <div className="buttons">
+      <a className="button is-primary">Primary</a>
+      <a className="button is-link">Link</a>
+    </div>
+  </div>
+)
+
+export default App
